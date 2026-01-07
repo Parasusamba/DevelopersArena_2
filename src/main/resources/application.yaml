@@ -1,0 +1,36 @@
+server:
+  port: ${SERVER_PORT:8080}
+spring:
+  application:
+    name: E-Commerce
+  datasource:
+    url: jdbc:postgresql://postgres:5432/${DB_NAME}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  sql.intit.mode: always
+  jpa:
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    logging:
+      level:
+        org.springframework.security: DEBUG
+        com.developersarena.ecommerce: DEBUG
+      pattern:
+        console: "[%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"
+# JWT Configuration
+jwt:
+  secret: ${JWT_SECRET}
+  expiration: ${JWT_EXPIRATION}
+# Actuator
+management:
+  endpoints.web.exposure.include: health,info,metrics
+  endpoint.health.show-details: always
+
+
