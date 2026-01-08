@@ -235,20 +235,6 @@ PUT /api/orders/{id}/status - Update order status (Admin only)
 ![Swagger UI](docs/screenshots/postman.png "Swagger UI")
 
 
-## 🤝 Contribution
-
-Contributions are welcome!  
-Feel free to fork this repository and submit a pull request.
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**.  
-See the [LICENSE](LICENSE) file for details.
-
----
-
 ## 👤 Author
 
 **Your Name**
