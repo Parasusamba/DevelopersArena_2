@@ -62,7 +62,7 @@ ecommerce-backend/
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/parasusamba/ecommerce.git
+git clone https://github.com/parasusamba/DevelopersArena_2
 cd ecommerce
 ```
 
